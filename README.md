@@ -1,48 +1,49 @@
-# Music Recommendation System Project
+## Music Recommendation System 
 
-This repository contains the implementation of a Music Recommendation System using the Spotify dataset from Kaggle. The system is built with Machine Learning techniques to suggest songs to users based on their listening history and preferences.
+Website : https://music-app-r.herokuapp.com/
 
-## Project Overview
+![alt text](https://github.com/misaaldsouza/music-recommendation-system/blob/main/images/front-end.PNG?raw=true)
 
-The Music Recommendation System aims to predict the likelihood that a user will enjoy a song. By analyzing the user's past song history and the properties of the music, the system will generate a list of recommended tracks. The model uses the Spotify dataset which contains a variety of features such as acousticness, danceability, energy, instrumentalness, liveness, loudness, speechiness, tempo, valence, and others.
+The music recommendation system can predict and then offer the appropriate songs to the user based on the characteristics or features of music the user listens to.
 
-## Objectives
+### Installation
+___
+> ##### pip3 install streamlit
+> ##### pip3 install pickle
 
-The primary objectives of this Music Recommendation System project are as follows:
+similarly import the following libraries :
+seaborn, matplotlib, plotly, base64, pandas, numpy, PIL, io & os.
 
-- **User Personalization:** To create a personalized experience for users by recommending tracks based on their individual tastes and listening habits.
+streamlit is a front-end framework for data-driven websites. 
 
-- **Feature Utilization:** To effectively use the features available in the Spotify dataset, such as acoustic properties and metadata, to inform the recommendation algorithms.
-
-- **Model Accuracy:** To develop a Machine Learning model that accurately predicts user preferences, aiming for high precision and recall in the recommendations.
-
-- **Scalability:** To ensure the system can handle a large number of users and songs without a decline in performance.
-
-- **User Engagement:** To increase user engagement by providing relevant song recommendations that would encourage further interaction with the service.
-
-- **Algorithm Diversity:** To explore and implement different recommendation algorithms and evaluate their effectiveness for this specific application.
-
-- **Data Analysis:** To perform comprehensive data analysis to understand user behavior and song popularity, which in turn can improve the recommendation engine.
-
-- **Continuous Learning:** To implement a system that learns over time, improving its recommendations as it gains more data on user preferences.
-
-These objectives drive the development and iterative improvement of the music recommendation system. By achieving these goals, the project aims to deliver a robust and enjoyable user experience.
+It is one of the most easiest frameworks to use for data science apps out there.
 
 
-## License
+### Model :
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+The algortithm used here is K-Means clustering and one of the methods from distance measures is used i.e. Manhattan Distance, which we have used to calculate
+the distance/similarities between the song entered by the user and the songs in the dataset. 
 
-## Acknowledgements
+The features used to find the similarities are :
 
-Kaggle for providing the Spotify dataset.
-The creators and contributors to the libraries used in this project.
-##Contact
+     'acousticness', 'artists', 'danceability’,
+     'duration_ms', 'energy', 'explicit', 'id’, 
+     'instrumentalness', 'key', 'liveness’, 
+     'loudness', 'mode', 'name', 'popularity’, 
+     'release_date', 'speechiness', 'tempo’, 
+     'valence', 'year'
 
-For any queries regarding the project, please reach out through the Issues section on GitHub.
+### Steps :
 
-## Contributors
+1. Open mrs.py file on a text editor
+2. Make sure all the libraries are installed
+3. Open cmd, locate to the file where mrs.py is located and run the following command
+> ##### streamlit run mrs.py
+It will open a browser and display the output !
 
-Sathish Prasad
+### Output : 
+![alt text](https://github.com/misaaldsouza/music-recommendation-system/blob/main/images/recommendations.PNG?raw=true)
 
+The link on the song column once clicked will open spotify and start playing that particular song !
 
+![alt text](https://github.com/misaaldsouza/music-recommendation-system/blob/main/images/sidebar-vis.PNG?raw=true)
