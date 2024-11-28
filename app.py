@@ -104,7 +104,7 @@ st.sidebar.write('* An artist creating a high energy song with either electric i
 st.sidebar.write('* The most popular artist from 1921–2020 is [*The Beatles*](https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2)')
 st.sidebar.title('Visualization')
 # Most Popular Tracks
-# https://github.com/misaaldsouza/music-recommendation-system/tree/main/images
+
 
 st.sidebar.header('Most Popular Tracks')
 image1 = Image.open('images/popular_tracks.png')
