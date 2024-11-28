@@ -1,6 +1,5 @@
 ## Music Recommendation System 
 
-Website : https://music-app-r.herokuapp.com/
 
 ![alt text](https://github.com/misaaldsouza/music-recommendation-system/blob/main/images/front-end.PNG?raw=true)
 
